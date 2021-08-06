@@ -1,13 +1,4 @@
-#
-import cv2
-import numpy as np
-import pickle
-import time
-import glob
-from  matplotlib import pyplot as plt
-
-
-#Author : Sergio Omar Martinez Garcia
+##Author : Sergio Omar Martinez Garcia
 #The aim of this project is to find the lane line of a road,
 #the imput will be a stream of video
 
@@ -22,6 +13,15 @@ from  matplotlib import pyplot as plt
 #9 find the curvature of the road
 #10 unwarp the image
 #11 add curvature and the center of the car according to the lane_line
+
+
+import cv2
+import numpy as np
+import pickle
+import time
+import glob
+from  matplotlib import pyplot as plt
+
 
 #look for camera_matrix file
 def retrieve_camera_values():

@@ -198,7 +198,7 @@ def sliding_window(warped):
         win_xleft_high = left_current + margin
         win_xright_low = right_current - margin
         win_xright_high = right_current + margin
-        #draw the fucking boxex
+        #draw  boxes
         nz_left_index = ((non_zero_y >= win_y_low) & (non_zero_y <=win_y_high)&
                 (non_zero_x >= win_xleft_low) & (non_zero_x <= win_xleft_high)).nonzero()[0]
         nz_right_index = ((non_zero_y >= win_y_low) & (non_zero_y <=win_y_high)&
